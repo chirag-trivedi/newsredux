@@ -1,7 +1,7 @@
-const baseURL = "http://localhost:8900"
+const baseURL = "http://localhost:6700"
 
 export function latestNews() {
-    const output = fetch(`${baseURL}/articles?_end=3`,
+    const output = fetch(`${baseURL}/articles`,
         { method: 'GET' }
     )
         .then((response) => response.json())

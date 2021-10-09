@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import { latestNews } from "../actions";
 import { bindActionCreators } from "redux";
 
-import LatestNews from "../LatestNews";
+import LatestNews from "../component/LatestNews";
 
 class Home extends React.Component {
 
@@ -14,11 +14,13 @@ class Home extends React.Component {
     render() {
         return(
             <div>
+                Featured News
                 <LatestNews latestData={this.props.articles.latest}/>
             </div>
         )
     }
 }
+
 
 function mapStateToProps(state) {
     console.log(state)
